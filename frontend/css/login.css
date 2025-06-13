@@ -2,7 +2,7 @@ body{
 box-sizing: border-box;
 margin: 0;
 padding: 10;
-background-image: url('image/FONDO\ LOGIN\ Y\ REGSITRP.jpg');
+background-image: url('/frontend/image/fondologin_y_registro.jpg');
 /* background: linear-gradient(to right, rgb(7, 15, 88), rgb(33, 68, 88));*/
 font-family: "lato",sans-serif;
 }

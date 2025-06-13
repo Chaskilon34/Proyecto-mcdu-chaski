@@ -6,7 +6,6 @@ import authRoutes from './routes/authRoutes.js';
 
 const app = express();
 
-// Middlewares
 app.use(cors());
 app.use(express.json());
 
@@ -16,12 +15,12 @@ const __dirname = path.dirname(__filename);
 // Servir frontend
 app.use(express.static(path.join(__dirname, '../frontend')));
 
-// Rutas API
+// Rutas de API
 app.use('/api', authRoutes);
 
-// Ruta raíz por defecto
+// Redirigir raíz al login
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '../frontend/login.html'));
+  res.sendFile(path.join(__dirname, '../frontend/pages/login.html'));
 });
 
 app.listen(3000, () => {

@@ -2,7 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url('image/tutofondo.jpg');
+  background-image: url('/frontend/image/tutofondo.jpg');
   background-size: cover; /* Asegura que la imagen cubra todo el fondo */
   background-position: center center; /* Centra la imagen en el fondo */
   }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro</title>
+  <link rel="stylesheet" href="../css/login.css" />
+  <link rel="icon" type="image/png" href="../image/imageperro.png" />
+</head>
+<body>
+  <div class="signupFrm">
+    <div class="visual">
+      <form id="registerForm" class="form">
+        <h1 class="title">Registro</h1>
+
+        <div class="inputContainer">
+          <input type="text" id="nombre" class="input" required />
+          <label class="label">Nombre de usuario</label>
+        </div>
+
+        <div class="inputContainer">
+          <input type="email" id="correo" class="input" required />
+          <label class="label">Correo</label>
+        </div>
+
+        <div class="inputContainer">
+          <input type="password" id="clave" class="input" required />
+          <label class="label">Contraseña</label>
+        </div>
+
+        <div class="inputContainer">
+          <input type="password" id="confirmarClave" class="input" required />
+          <label class="label">Confirmar contraseña</label>
+        </div>
+
+        <div class="inputContainer">
+          <select id="tipo" class="input" required>
+            <option value="" disabled selected>Seleccionar tipo de usuario</option>
+            <option value="Aspirante">Aspirante</option>
+            <option value="Piloto">Piloto</option>
+            <option value="admin">Administrador</option>
+          </select>
+          <label class="label">Tipo de Usuario</label>
+        </div>
+
+        <div id="mensajeError" class="mensaje-error" style="display: none;">
+          Error: Las contraseñas no coinciden
+        </div>
+
+        <div class="buttonGroup">
+          <button type="submit" class="submitBtn">Registrarse</button>
+          <span class="separator">o</span>
+          <button type="button" class="submitBtn" onclick="window.location.href='login.html'">Volver a Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="../js/register.js"></script>
+</body>
+</html>

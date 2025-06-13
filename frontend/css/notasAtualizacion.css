@@ -7,7 +7,7 @@ html, body {
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url('image/imagenActualizacion.jpg');
+    background-image: url('/frontend/image/imagenActualizacion.jpg');
     background-size: cover; /* Asegura que la imagen cubra todo el fondo */
     background-position: center center; /* Centra la imagen en el fondo */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
