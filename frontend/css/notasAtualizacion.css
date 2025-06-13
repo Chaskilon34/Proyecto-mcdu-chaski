@@ -1,0 +1,78 @@
+/* Asegura que el body y html ocupen toda la altura disponible  para que la imagen de fondo no se corte*/
+html, body {
+    height: 100%; /* Asegura que el body ocupe el 100% de la altura */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('image/imagenActualizacion.jpg');
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    background-position: center center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-height: 10vh; 
+}
+
+h1 {
+    text-align: center;
+    color: #000000;
+}
+
+.update-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.update-list li {
+    background-color: #dad1d1;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.update-list li h3 {
+    margin: 0;
+    color: blue;
+}
+
+.update-list li p {
+    margin: 5px 0 0;
+    color: #252424;
+}
+
+.update-list li .date {
+    font-size: 0.9em;
+    color: #706969;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px; /* Puedes ajustar el margen según lo que necesites */
+    color: #000000;
+}
+
+.submitBtn{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px rgb(0, 0, 0);
+    display: flex;
+    padding: 8px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: top 30px;
+    cursor:pointer;
+    
+}

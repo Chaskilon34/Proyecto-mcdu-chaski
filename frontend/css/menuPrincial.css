@@ -1,0 +1,172 @@
+/* Reset de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image:url(image/cabina.jpg);
+    background-size:cover;
+    background-position: center center;
+}
+
+/* Estilos para el encabezado */
+header {
+
+    color: #ffffff;
+    padding: 10px 0px;
+    text-align: center;
+    padding-left: 10px;
+    box-shadow:10px 1px #fff;
+}
+
+header .logo h1 {
+    font-size: 2rem;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para la sección de bienvenida */
+.tutoriales {
+    float:center;
+    margin-top:40px;
+    padding: 80px;
+    border-radius: 1000;
+    box-shadow: 50px 10px 10px rgba(255, 255, 255, 0.1);
+    font-size: 1.0rem;
+
+}
+
+
+.comentarios h2 {
+    font-size: 1.2rem;
+    color: #000000;
+    margin-bottom: 5px;
+}
+.actualizaciones{
+    font-size: 0.7rem;
+    color: #000000;
+    margin-bottom: 5px
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #000000;
+    color: #ffffff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+
+/* Estilos para el contenedor */
+.contenedor {
+    overflow: auto; /* Para evitar que el contenido se desborde */
+}
+
+/* Cuadro de tutoriales */
+.tutoriales {
+    float: left;
+    width: 15%;
+    padding: 20px;
+    border-radius: 1000;
+    margin-top: 19px;
+    top: 20%; left: 240px;
+    position: absolute;
+    border:solid#827575;
+}
+
+/* Cuadro comentarios */
+.comentarios {
+    float: left;
+    width: 15%;
+    padding: 20px;
+    border-radius: 1000;
+    margin-top: 159px;
+    position:absolute;
+    top: 20%; left: 240px;
+    border:solid#827575;
+}
+/* Cuadro actualizaciones */ 
+.actualizaciones{
+    
+        float: left;
+        width: 15%;
+        padding: 20px;
+        border-radius: 1000;
+        margin-top: 282px;
+        position:absolute;
+        top: 20%; left: 240px;
+        border:solid#827575;
+        font-size: 13px;
+    
+}
+.introduccion{
+    float: right;
+    width: 47%;
+    padding:20px;
+
+    margin:90px;
+    align-items:center;
+    color:rgb(19, 14, 14);
+    height:100%;
+    border-width: 2px;
+   }
+ .introduccion h3 {
+font-size: 18px;
+color: #ffffff;
+height: 500px;
+overflow: hidden;
+ }  
+ .emulador{
+    float: left;
+        width: 15%;
+        padding: 20px;
+        border-radius: 1000;
+
+        margin-top: 282px;
+        position:absolute;
+        top: 33%; left: 240px;
+        border:solid#827575;
+        
+ } 
+ a{
+    text-decoration:none;
+    color: #ffffff;
+ }
+ .glass-box {
+    background: rgba(255, 255, 255, 0.15); /* Fondo blanco semitransparente */
+    backdrop-filter: blur(10px);           /* Efecto de desenfoque */
+    -webkit-backdrop-filter: blur(10px);   /* Soporte para Safari */
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    color: white;                          /* Opcional: si el fondo es oscuro */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+ 

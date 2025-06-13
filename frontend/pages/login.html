@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>diseño completo de formulario</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="" />
+    <link rel="icon" type="image/png" href="imageperro.png" />
+  </head>
+  <body>
+    <div class="signupFrm"> <!--Contorno del formulario-->
+      <div class="visual">
+        <form action="#" class="form"> <!-- importante-->
+            <h1 class="title"> Login</h1> <!-- importante-->
+             <div class="inputContainer">
+                <input type="email" class="input" placeholder="" required >
+                <label for="" class="label">Email</label>
+             </div>
+
+             <div class="inputContainer">
+                <input type="text" class="input" placeholder="" required>
+                <label for="" class="label">Username</label>
+             </div>
+
+             <div class="inputContainer">
+                <input type="password" class="input" placeholder="" required>
+                <label for="" class="label">password</label>
+             </div>
+              
+             <div class="buttonGroup">
+              <button class="submitBtn" onclick="window.location.href='registro.html'">Registrarse</button>
+              <span class="separator">o</span> <!-- ayuda a poner el espacio entre registrar y envia  segun lo que envestigue es Es un elemento en línea (inline): no rompe el flujo como un <div>.Puedes aplicarle estilos con CSS-->
+              <button class="submitBtn" onclick="window.location.href='menuPrincipal.html'">enviar</button>
+            </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

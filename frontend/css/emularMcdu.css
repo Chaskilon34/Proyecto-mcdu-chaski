@@ -1,0 +1,142 @@
+/* Estilos optimizados para MCDU Airbus */
+body {
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Courier New', monospace;
+}
+
+.mcdu-container {
+    width: 100%;
+    max-width: 360px;
+    background-color: #333;
+    border: 10px solid #222;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 0 20px rgba(0,80,0,0.4);
+}
+
+.mcdu-screen {
+    background-color: #0a1e0a;
+    color: #7f7;
+    height: 210px;
+    padding: 12px 10px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    line-height: 1.35;
+    font-family: 'Courier New', monospace;
+    border: 2px solid #1a3a1a;
+    border-radius: 4px;
+    overflow: hidden;
+    text-shadow: 0 0 5px #7f7;
+    white-space: pre;
+    letter-spacing: 0.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mcdu-keyboard {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 5px;
+    justify-items: center;
+}
+
+.mcdu-key {
+    background-color: #444;
+    color: #eee;
+    border: none;
+    border-radius: 3px;
+    padding: 0;
+    font-size: 14px;
+    font-weight: bold;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+.mcdu-func-keys {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-top: 15px;
+    grid-column: 1 / -1;
+}
+
+/* Teclas especiales */
+[data-key="EXEC"] {
+    background-color: #c00;
+    color: white;
+    grid-column: span 2;
+}
+
+[data-key="CLR"], 
+[data-key="DEL"] {
+    color: #f99;
+}
+
+[data-key="LEFT"], 
+[data-key="RIGHT"],
+[data-key="UP"], 
+[data-key="DOWN"] {
+    color: #8cf;
+    font-size: 18px;
+}
+
+/* Efectos interactivos */
+.mcdu-key:hover {
+    background-color: #555;
+}
+
+.mcdu-key:active {
+    transform: translateY(2px);
+}
+
+/* Versión móvil */
+@media (max-width: 400px) {
+    .mcdu-container {
+        max-width: 320px;
+        padding: 10px;
+    }
+    
+    .mcdu-screen {
+        height: 180px;
+        font-size: 14px;
+    }
+    
+    .mcdu-key {
+        height: 36px;
+        width: 36px;
+        font-size: 13px;
+    }
+  
+}
+
+.btn-volver {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #4b4f5c; /* Azul fuerte */
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 1000; /* Para que esté sobre los demás elementos */
+}
+
+.btn-volver:hover {
+    background-color: #1d4ed8; /* Azul más claro al pasar el mouse */
+}
+
