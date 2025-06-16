@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emulador MCDU Airbus</title>
+    <link rel="stylesheet" href="emularMcdu.css">
+</head>
+<body>
+    <button class="btn-volver" onclick="window.history.back()">Menu Principal</button>
+    <div class="mcdu-container">
+        <div id="display" class="mcdu-screen"></div>
+
+
+        
+        <div class="mcdu-keyboard">
+            <!-- Fila 1: Números -->
+            <button class="mcdu-key" data-key="1">1</button>
+            <button class="mcdu-key" data-key="2">2</button>
+            <button class="mcdu-key" data-key="3">3</button>
+            <button class="mcdu-key" data-key="4">4</button>
+            <button class="mcdu-key" data-key="5">5</button>
+            <button class="mcdu-key" data-key="6">6</button>
+            <button class="mcdu-key" data-key="7">7</button>
+            <button class="mcdu-key" data-key="8">8</button>
+            <button class="mcdu-key" data-key="9">9</button>
+            <button class="mcdu-key" data-key="0">0</button>
+            <button class="mcdu-key" data-key=".">.</button>
+            <button class="mcdu-key" data-key="/">/</button>
+            
+            <!-- Fila 2: Letras A-L -->
+            <button class="mcdu-key" data-key="A">A</button>
+            <button class="mcdu-key" data-key="B">B</button>
+            <button class="mcdu-key" data-key="C">C</button>
+            <button class="mcdu-key" data-key="D">D</button>
+            <button class="mcdu-key" data-key="E">E</button>
+            <button class="mcdu-key" data-key="F">F</button>
+            <button class="mcdu-key" data-key="G">G</button>
+            <button class="mcdu-key" data-key="H">H</button>
+            <button class="mcdu-key" data-key="I">I</button>
+            <button class="mcdu-key" data-key="J">J</button>
+            <button class="mcdu-key" data-key="K">K</button>
+            <button class="mcdu-key" data-key="L">L</button>
+            
+            <!-- Fila 3: Letras M-X -->
+            <button class="mcdu-key" data-key="M">M</button>
+            <button class="mcdu-key" data-key="N">N</button>
+            <button class="mcdu-key" data-key="O">O</button>
+            <button class="mcdu-key" data-key="P">P</button>
+            <button class="mcdu-key" data-key="Q">Q</button>
+            <button class="mcdu-key" data-key="R">R</button>
+            <button class="mcdu-key" data-key="S">S</button>
+            <button class="mcdu-key" data-key="T">T</button>
+            <button class="mcdu-key" data-key="U">U</button>
+            <button class="mcdu-key" data-key="V">V</button>
+            <button class="mcdu-key" data-key="W">W</button>
+            <button class="mcdu-key" data-key="X">X</button>
+            
+            <!-- Fila 4: Letras Y-Z y símbolos -->
+            <button class="mcdu-key" data-key="Y">Y</button>
+            <button class="mcdu-key" data-key="Z">Z</button>
+            <button class="mcdu-key" data-key="+">+</button>
+            <button class="mcdu-key" data-key="-">-</button>
+            <button class="mcdu-key" data-key="CLR">CLR</button>
+            <button class="mcdu-key" data-key="DEL">DEL</button>
+            <button class="mcdu-key" data-key="LEFT">◄</button>
+            <button class="mcdu-key" data-key="RIGHT">►</button>
+            <button class="mcdu-key" data-key="UP">▲</button>
+            <button class="mcdu-key" data-key="DOWN">▼</button>
+            <button class="mcdu-key" data-key="EXEC">EXEC</button>
+            
+            <!-- Teclas funcionales -->
+            <div class="mcdu-func-keys">
+                <button class="mcdu-func-key" data-key="FPLN">FPLN</button>
+                <button class="mcdu-func-key" data-key="RAD">RAD</button>
+                <button class="mcdu-func-key" data-key="FUEL">FUEL</button>
+                <button class="mcdu-func-key" data-key="SEC">SEC</button>
+                <button class="mcdu-func-key" data-key="ATC">ATC</button>
+                <button class="mcdu-func-key" data-key="MENU">MENU</button>
+                <button class="mcdu-func-key" data-key="INIT">INIT</button>
+            </div>
+        </div>
+    </div>
+    <script src="emularMcdu.js"></script>
+</body>
+</html>
