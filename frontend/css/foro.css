@@ -2,11 +2,12 @@ body {
  margin: 0;
 padding: 0;
 font-family: Arial, Helvetica, sans-serif;
+
 background: url('../image/foroFondo.jpg') no-repeat center ;
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
-color: white;
+
 }
 
 .contenido {

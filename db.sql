@@ -8,6 +8,7 @@ CREATE TABLE Usuario (
   Tipo_Usuario ENUM('admin', 'Piloto', 'Aspirante') NOT NULL
 );
 
+
 INSERT INTO Usuario (Correo, Contraseña, Tipo_Usuario)
 VALUES ('admin@correo.com', 'admin123', 'admin');
 
@@ -15,6 +16,7 @@ VALUES ('admin@correo.com', 'admin123', 'admin');
 
 -- ELIMNAR REGISTROS = DELETE FROM Usuario WHERE ID_Usuario = 1;
 -- por la id
+
 
 
 

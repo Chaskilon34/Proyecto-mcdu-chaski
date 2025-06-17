@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
 
+
     /* fondo de imagen se pone aca toca mirar donde se quita  la parte blanaca*/
     background: url('../image/foroFondo.jpg') no-repeat center ;
     background-size: cover;
@@ -11,6 +12,8 @@ body {
 
 
     background-repeat: no-repeat;
+
+
 }
 
 .container {

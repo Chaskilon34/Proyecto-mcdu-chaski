@@ -2,10 +2,12 @@ body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
     background: url('../image/fondologin_y_registro.jpg') no-repeat center ;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
     font-family: "lato",sans-serif;
     }
     .signupFrm{

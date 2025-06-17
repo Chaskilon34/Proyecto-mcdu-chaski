@@ -9,10 +9,12 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+
     background: url('../image/cabina.jpg') no-repeat center ;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
 }
 
 /* Estilos para el encabezado */

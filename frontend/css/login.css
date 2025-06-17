@@ -2,10 +2,12 @@ body{
 box-sizing: border-box;
 margin: 0;
 padding: 10;
+
 background: url('../image/tutofondo.jpg') no-repeat center ;
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
+
 /* background: linear-gradient(to right, rgb(7, 15, 88), rgb(33, 68, 88));*/
 font-family: "lato",sans-serif;
 }
