@@ -2,7 +2,9 @@ import express from 'express';
 import cors from 'cors';
 import path from 'path';
 import { fileURLToPath } from 'url';
+
 import authRoutes from './routes/authRoutes.js';
+import usuarioRoutes from './routes/usuarioRoutes.js'; // ✅ NUEVA IMPORTACIÓN
 
 const app = express();
 
@@ -17,6 +19,7 @@ app.use(express.static(path.join(__dirname, '../frontend')));
 
 // Rutas de API
 app.use('/api', authRoutes);
+app.use('/api/usuarios', usuarioRoutes); // ✅ RUTA PARA EL PANEL ADMIN
 
 // Redirigir raíz al login
 app.get('/', (req, res) => {
