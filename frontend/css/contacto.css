@@ -3,9 +3,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+
+    /* fondo de imagen se pone aca toca mirar donde se quita  la parte blanaca*/
     background: url('../image/foroFondo.jpg') no-repeat center ;
     background-size: cover;
     background-position: center;
+
+
     background-repeat: no-repeat;
 }
 
