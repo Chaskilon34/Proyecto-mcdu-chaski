@@ -90,3 +90,7 @@ ID_Emergencia INT,
 FOREIGN KEY (ID_Vuelo) REFERENCES Vuelo(ID_Vuelo) ON DELETE CASCADE ,
 FOREIGN KEY (ID_Emergencia) REFERENCES Emergencias(ID_Emergencia) ON DELETE CASCADE
 );
+
+
+
+
