@@ -1,5 +1,6 @@
 import bcrypt from 'bcrypt';
 import { buscarUsuarioPorCorreo, crearUsuario } from '../models/userModel.js';
+import { enviarCorreoRegistro } from '../utils/emailermensaje.js'; // ✅ Importa envío de correo
 
 export const login = async (req, res) => {
   try {
@@ -24,7 +25,8 @@ export const login = async (req, res) => {
 
 export const register = async (req, res) => {
   try {
-    const { nombre, correo, contraseña, tipo } = req.body;
+    const { nombre, correo, contraseña } = req.body;
+    const tipo = 'Aspirante'; // ✅ Se fuerza el tipo desde el backend
 
     const existente = await buscarUsuarioPorCorreo(correo);
     if (existente) {
@@ -33,6 +35,9 @@ export const register = async (req, res) => {
 
     const hash = await bcrypt.hash(contraseña, 10);
     await crearUsuario(nombre, correo, hash, tipo);
+
+    // ✅ Enviar correo de bienvenida
+    await enviarCorreoRegistro(correo, nombre);
 
     res.status(201).json({ message: 'Usuario registrado exitosamente' });
   } catch (error) {

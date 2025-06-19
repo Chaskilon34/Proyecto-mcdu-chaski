@@ -13,8 +13,8 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
   const data = await res.json();
 
   if (res.status === 200) {
-    localStorage.setItem('tipo', data.tipo);
-    localStorage.setItem('nombre', data.nombre);
+    sessionStorage.setItem('tipo', data.tipo);
+    sessionStorage.setItem('nombre', data.nombre);
     alert(data.message);
     window.location.href = 'menuPrincipal.html';
   } else {

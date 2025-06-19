@@ -1,7 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const tipo = localStorage.getItem('tipo');
-  console.log("Tipo detectado:", tipo); // 👈 esto mostrará el rol en consola
+  // ✅ Validar que haya sesión activa (tipo y nombre)
+  const tipo = sessionStorage.getItem('tipo');
+  const nombre = sessionStorage.getItem('nombre');
 
+  if (!tipo || !nombre) {
+    alert("Debes iniciar sesión.");
+    window.location.href = 'login.html';
+    return;
+  }
+
+  console.log("Tipo detectado:", tipo); // Para depuración
+
+  // ✅ Si el usuario es admin, agregar enlace al Panel Admin
   if (tipo === 'admin') {
     const nav = document.querySelector('nav ul');
     if (!nav) {

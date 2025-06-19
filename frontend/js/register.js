@@ -5,7 +5,7 @@ document.getElementById('registerForm').addEventListener('submit', async (e) => 
   const correo = document.getElementById('correo').value.trim();
   const contraseña = document.getElementById('clave').value.trim();
   const confirmar = document.getElementById('confirmarClave').value.trim();
-  const tipo = 'Entusiasta'; // Forzamos el tipo
+  const tipo = 'Aspirante'; // Forzamos el tipo
 
   const mensajeError = document.getElementById('mensajeError');
 
