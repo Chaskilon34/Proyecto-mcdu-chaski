@@ -15,6 +15,7 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
   if (res.status === 200) {
     sessionStorage.setItem('tipo', data.tipo);
     sessionStorage.setItem('nombre', data.nombre);
+    sessionStorage.setItem('correo', data.correo);
     alert(data.message);
     window.location.href = 'menuPrincipal.html';
   } else {

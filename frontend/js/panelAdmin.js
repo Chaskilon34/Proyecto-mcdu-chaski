@@ -67,4 +67,14 @@ async function actualizarRol(idUsuario, btn) {
     console.error('❌ Error al actualizar rol:', error);
     alert("Error al actualizar el rol.");
   }
-}
+};
+// aca agregamso el pages show ya que  no lo pudearreglar de otra manera
+window.addEventListener('pageshow', () => {
+  const tipo = sessionStorage.getItem('tipo');
+  const nombre = sessionStorage.getItem('nombre');
+
+  if (!tipo || tipo !== 'admin') {
+    console.warn("🔒 Acceso inválido desde historial. Redirigiendo...");
+    window.location.href = 'login.html';
+  }
+});
