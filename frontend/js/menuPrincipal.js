@@ -9,8 +9,11 @@ document.addEventListener('DOMContentLoaded', () => {
     return;
   }
 
-  console.log("Tipo detectado:", tipo);
+  // Mostrar datos en el menú
+  document.getElementById('userNombre').textContent = nombre;
+  document.getElementById('userCorreo').textContent = correo;
 
+  // Agregar enlace admin si aplica
   if (tipo === 'admin') {
     const nav = document.querySelector('nav ul');
     if (nav) {
@@ -20,18 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Llenar menú desplegable con datos
-  document.getElementById('userNombre').textContent = nombre || 'Usuario';
-  document.getElementById('userCorreo').textContent = correo;
-});
-
-// ✅ Manejo del historial y funcionalidad del menú desplegable
-
-window.addEventListener('pageshow', (event) => {
-  if (event.persisted || window.performance?.navigation.type === 2) {
-    window.location.reload();
-  }
-
+  // Menú desplegable funcional
   const dropdownBtn = document.getElementById('dropdownBtn');
   const userDropdown = document.getElementById('userDropdown');
 
@@ -41,16 +33,27 @@ window.addEventListener('pageshow', (event) => {
       userDropdown.classList.toggle('show');
     });
 
-    window.addEventListener('click', function () {
-      userDropdown.classList.remove('show');
+    // Ocultar si se hace clic fuera del menú
+    document.addEventListener('click', function (e) {
+      if (!userDropdown.contains(e.target) && e.target !== dropdownBtn) {
+        userDropdown.classList.remove('show');
+      }
     });
   }
 
+  // Cerrar sesión correctamente
   const logoutBtn = document.getElementById('logoutBtn');
   if (logoutBtn) {
     logoutBtn.addEventListener('click', () => {
       sessionStorage.clear();
       window.location.href = 'login.html';
     });
+  }
+});
+
+// ✅ Forzar recarga en navegación por historial (back/forward)
+window.addEventListener('pageshow', (event) => {
+  if (event.persisted || window.performance?.navigation.type === 2) {
+    window.location.reload();
   }
 });
