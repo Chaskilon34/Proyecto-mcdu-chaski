@@ -9,49 +9,42 @@ document.addEventListener('DOMContentLoaded', () => {
     return;
   }
 
-  // Mostrar datos en el menú
   document.getElementById('userNombre').textContent = nombre;
   document.getElementById('userCorreo').textContent = correo;
 
-  // Agregar enlace admin si aplica
   if (tipo === 'admin') {
     const nav = document.querySelector('nav ul');
-    if (nav) {
-      const adminBtn = document.createElement('li');
-      adminBtn.innerHTML = '<a href="panelAdmin.html">Panel de Admin</a>';
-      nav.appendChild(adminBtn);
-    }
+    const adminBtn = document.createElement('li');
+    adminBtn.innerHTML = '<a href="panelAdmin.html">Panel de Admin</a>';
+    nav.appendChild(adminBtn);
   }
 
-  // Menú desplegable funcional
-  const dropdownBtn = document.getElementById('dropdownBtn');
-  const userDropdown = document.getElementById('userDropdown');
-
-  if (dropdownBtn && userDropdown) {
-    dropdownBtn.addEventListener('click', function (e) {
+  const toggleBtn = document.getElementById('userToggle');
+  const dropdown = document.getElementById('userDropdown');
+  if (toggleBtn && dropdown) {
+    toggleBtn.addEventListener('click', function (e) {
       e.stopPropagation();
-      userDropdown.classList.toggle('show');
+      dropdown.classList.toggle('show');
     });
-
-    // Ocultar si se hace clic fuera del menú
+  
     document.addEventListener('click', function (e) {
-      if (!userDropdown.contains(e.target) && e.target !== dropdownBtn) {
-        userDropdown.classList.remove('show');
+      if (!dropdown.contains(e.target) && e.target !== toggleBtn) {
+        dropdown.classList.remove('show');
       }
     });
+  } else {
+    console.warn("No se encontró el botón o el menú. ¿El id='userToggle' existe en el HTML?");
   }
+  
 
-  // Cerrar sesión correctamente
   const logoutBtn = document.getElementById('logoutBtn');
-  if (logoutBtn) {
-    logoutBtn.addEventListener('click', () => {
-      sessionStorage.clear();
-      window.location.href = 'login.html';
-    });
-  }
+  logoutBtn.addEventListener('click', () => {
+    sessionStorage.clear();
+    window.location.href = 'login.html';
+  });
 });
 
-// ✅ Forzar recarga en navegación por historial (back/forward)
+// Refrescar si se navega con back/forward
 window.addEventListener('pageshow', (event) => {
   if (event.persisted || window.performance?.navigation.type === 2) {
     window.location.reload();
