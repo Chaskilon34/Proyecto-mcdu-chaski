@@ -1,3 +1,4 @@
+
 // Espera a que el DOM esté completamente cargado
 document.addEventListener('DOMContentLoaded', async () => {
   // Obtiene el tipo y nombre de usuario desde sessionStorage
@@ -120,3 +121,4 @@ window.addEventListener('pageshow', () => {
     window.location.href = 'login.html';
   }
 });
+

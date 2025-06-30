@@ -1,3 +1,4 @@
+
 import mysql from 'mysql2/promise';
 import dotenv from 'dotenv';
 
@@ -21,3 +22,4 @@ export const pool = mysql.createPool({
     console.error('❌ Error al conectar a la base de datos:', error);
   }
 })();
+

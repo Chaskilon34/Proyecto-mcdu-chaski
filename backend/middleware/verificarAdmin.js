@@ -1,3 +1,4 @@
+
 export const verificarAdmin = (req, res, next) => {
     const tipo = req.headers['tipo'];
   
@@ -7,4 +8,3 @@ export const verificarAdmin = (req, res, next) => {
   
     next();
   };
-  

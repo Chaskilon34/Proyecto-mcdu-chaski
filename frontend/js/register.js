@@ -1,3 +1,4 @@
+
 document.getElementById('registerForm').addEventListener('submit', async (e) => {
   e.preventDefault();
 
@@ -35,4 +36,3 @@ document.getElementById('registerForm').addEventListener('submit', async (e) => 
     console.error('❌ Error en el registro:', error);
     alert('Error del servidor. Intenta más tarde.');
   }
-});

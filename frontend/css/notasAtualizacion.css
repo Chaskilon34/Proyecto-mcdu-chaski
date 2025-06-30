@@ -1,3 +1,4 @@
+
 /* Asegura que el body y html ocupen toda la altura disponible  para que la imagen de fondo no se corte*/
 html, body {
     height: 100%; /* Asegura que el body ocupe el 100% de la altura */

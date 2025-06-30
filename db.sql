@@ -1,3 +1,4 @@
+
 CREATE DATABASE proyecto_mcdu;
 USE proyecto_mcdu;
 

@@ -1,3 +1,4 @@
+
 import bcrypt from 'bcrypt';
 import { buscarUsuarioPorCorreo, crearUsuario } from '../models/userModel.js';
 import { enviarCorreoRegistro } from '../utils/emailermensaje.js'; // ✅ Importa envío de correo

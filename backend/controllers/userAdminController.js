@@ -1,3 +1,4 @@
+
 import { pool } from '../config/db.js';
 import { enviarCorreoEliminacion } from '../utils/emailermensaje.js'; // Importa la nueva función
 
