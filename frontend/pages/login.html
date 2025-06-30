@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="../css/login.css" />
+  <link rel="icon" type="image/png" href="../image/imageperro.png" />
+</head>
+<body>
+  <div class="signupFrm">
+    <div class="visual">
+      <form id="loginForm" class="form"  >
+        <h1 class="title">Login</h1>
+
+        <div class="inputContainer">
+          <input type="email" id="correo" class="input" required />
+          <label class="label">Correo</label>
+        </div>
+
+        <div class="inputContainer">
+          <input type="password" id="contraseña" class="input" required autocomplete="off" />
+          <label class="label">Contraseña</label>
+        </div>
+
+        <div class="buttonGroup">
+          <button type="button" class="submitBtn" onclick="window.location.href='register.html'">Registrarse</button>
+          <span class="separator">o</span>
+          <button type="submit" class="submitBtn">Ingresar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="../js/login.js"></script>
+</body>
+</html>

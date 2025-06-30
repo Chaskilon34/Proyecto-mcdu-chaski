@@ -1,0 +1,250 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Fondo general */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: url('../image/cabina.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+  }
+  
+  /* Encabezado */
+  header {
+    color: #ffffff;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 10px 1px #fff;
+  }
+  
+  header .logo h1 {
+    font-size: 2rem;
+  }
+  
+  header nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+  
+  header nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Tabla moderna estilo cabina */
+  table {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(6px);
+    color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+  }
+  
+  thead {
+    background-color: rgba(255, 255, 255, 0.2);
+    font-weight: bold;
+  }
+  
+  thead th, tbody td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Select estilo cockpit */
+  select {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: none;
+    background-color: #222;
+    color: #fff;
+    outline: none;
+    font-size: 0.9rem;
+  }
+  
+  select option {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  /* Botón de acción */
+  button {
+    padding: 6px 12px;
+    background-color: #00bfff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #009ace;
+  }
+  
+  /* Títulos y secciones */
+  h1, h2 {
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 1px 1px 4px #000;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+    color: #00bfff;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  /* Secciones */
+  section {
+    margin: 20px auto;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Enlace volver */
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Etiqueta de construcción */
+  p {
+    text-align: center;
+    font-style: italic;
+    opacity: 0.8;
+    color: #ccc;
+  }
+    /* Menú de usuario desplegable */
+  .user-menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  #dropdownBtn {
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    color: white;
+  }
+  
+
+  #userDropdown {
+    display: none; /* oculto por defecto */
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    z-index: 999;
+  }
+
+  #userDropdown.show {
+    display: block;
+  }
+
+  #userDropdown p {
+    margin: 5px 0;
+  }
+
+  #logoutBtn {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    background-color: #00bfff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  #logoutBtn:hover {
+    background-color: #009ace;
+  }
+@media (max-width: 800px) {
+  header nav ul {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+  .tutoriales, .comentarios, .actualizaciones, .emulador, .introduccion {
+    position: static !important;
+    float: none !important;
+    width: 100% !important;
+    margin: 8px 0 !important;
+    border-radius: 16px !important;
+    padding: 12px !important;
+  }
+  table, thead, tbody, th, td, tr {
+    display: block;
+    width: 100%;
+  }
+  tr {
+    margin-bottom: 12px;
+    border-bottom: 1px solid #ccc;
+  }
+  th {
+    background: #222;
+    color: #fff;
+    font-weight: bold;
+  }
+  td {
+    border: none;
+    position: relative;
+    padding-left: 50%;
+  }
+  td:before {
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    white-space: nowrap;
+    font-weight: bold;
+    color: #333;
+    content: attr(data-label);
+  }
+}

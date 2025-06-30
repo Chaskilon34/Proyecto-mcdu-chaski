@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro</title>
+
+  <link rel="stylesheet" href="../css/registro.css" />
+
+  <link rel="icon" type="image/png" href="../image/imageperro.png" />
+</head>
+<body>
+  <div class="signupFrm">
+    <div class="visual">
+      <!-- fragmento corregido -->
+<form id="registerForm" class="form">
+  <h1 class="title">Registro</h1>
+
+  <div class="inputContainer">
+    <input type="text" id="nombre" class="input" required placeholder="Nombre de usuario" />
+    <label class="label">Nombre de usuario</label>
+  </div>
+
+  <div class="inputContainer">
+    <input type="email" id="correo" class="input" required placeholder="Correo" />
+    <label class="label">Correo</label>
+  </div>
+
+  <div class="inputContainer">
+    <input type="password" id="clave" class="input" required placeholder="Contraseña" />
+    <label class="label">Contraseña</label>
+  </div>
+
+  <div class="inputContainer">
+    <input type="password" id="confirmarClave" class="input" required placeholder="Confirmar contraseña" />
+    <label class="label">Confirmar contraseña</label>
+  </div>
+
+  <div id="mensajeError" class="mensaje-error" style="display: none;">
+    Error: Las contraseñas no coinciden
+  </div>
+
+  <div class="buttonGroup">
+    <button type="submit" class="submitBtn">Registrarse</button>
+    <span class="separator">o</span>
+    <button type="button" class="submitBtn" onclick="window.location.href='login.html'">Login</button>
+  </div>
+</form>
+
+    </div>
+  </div>
+
+  <script src="../js/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+body {
+ margin: 0;
+padding: 0;
+font-family: Arial, Helvetica, sans-serif;
+
+background: url('../image/foroFondo.jpg') no-repeat center ;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
+}
+
+.contenido {
+max-width: 600px;
+margin: auto;
+padding: 20px;
+background: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente para el contenedor */
+border-radius: 10px;
+}
+
+h1 {
+text-align: left;
+}
+
+#forum {
+margin-top: 20px;
+}
+
+#messages {
+max-height: 300px;
+overflow-y: auto;
+margin-bottom: 10px;
+padding: 10px;
+border: 1px solid #fff;
+border-radius: 5px;
+background: rgba(255, 255, 255, 0.1); /* Fondo blanco semi-transparente */
+}
+
+form {
+display: flex;
+}
+
+input[type="text"] {
+flex: 1;
+padding: 10px;
+border: none;
+border-radius: 5px 0 0 5px;
+}
+
+button {
+padding: 10px;
+border: none;
+border-radius: 0 5px 5px 0;
+background-color: #2980b9; /* Color del botón */
+color: white;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #1f639b; /* Color del botón al pasar el ratón */
+}
+.botonRegrese{
+    margin: -5cm 0cm 00cm 00cm;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
